@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our First Monthsary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/images/20240830_151414.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(5px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .carousel-container {
+            width: 80vw;
+            max-width: 1280px;
+            aspect-ratio: 3 / 2;
+            position: relative;
+            background-color: transparent;
+        }
+
+        .aspect-ratio {
+            position: relative;
+            width: 100%;
+            padding-top: 66.67%;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .aspect-ratio img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            /* Centers the image */
+        }
+
+        .carousel-item {
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-color: transparent;
+        }
+
+        .carousel-caption {
+            /* background: rgba(207, 214, 201, 1.00); */
+            /* border-radius: 10px; */
+            /* color: white; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="carousel-container">
+        <div id="carouselSpecial" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="0" class='active' aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="5" aria-current="true" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="6" aria-current="true" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="7" aria-current="true" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="8" aria-current="true" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="9" aria-current="true" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="10" aria-current="true" aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="11" aria-current="true" aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="12" aria-current="true" aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="13" aria-current="true" aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="14" aria-current="true" aria-label="Slide 15"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="15" aria-current="true" aria-label="Slide 16"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="16" aria-current="true" aria-label="Slide 17"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="17" aria-current="true" aria-label="Slide 18"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="18" aria-current="true" aria-label="Slide 19"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="19" aria-current="true" aria-label="Slide 20"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="20" aria-current="true" aria-label="Slide 21"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="21" aria-current="true" aria-label="Slide 22"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="22" aria-current="true" aria-label="Slide 23"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="23" aria-current="true" aria-label="Slide 24"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="24" aria-current="true" aria-label="Slide 25"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="25" aria-current="true" aria-label="Slide 26"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="26" aria-current="true" aria-label="Slide 27"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="27" aria-current="true" aria-label="Slide 28"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="28" aria-current="true" aria-label="Slide 29"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="29" aria-current="true" aria-label="Slide 30"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="30" aria-current="true" aria-label="Slide 31"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="31" aria-current="true" aria-label="Slide 32"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="32" aria-current="true" aria-label="Slide 33"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="33" aria-current="true" aria-label="Slide 34"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="34" aria-current="true" aria-label="Slide 35"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="35" aria-current="true" aria-label="Slide 36"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="36" aria-current="true" aria-label="Slide 37"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="37" aria-current="true" aria-label="Slide 38"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="38" aria-current="true" aria-label="Slide 39"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="39" aria-current="true" aria-label="Slide 40"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="40" aria-current="true" aria-label="Slide 41"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="41" aria-current="true" aria-label="Slide 42"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="42" aria-current="true" aria-label="Slide 43"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="43" aria-current="true" aria-label="Slide 44"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="44" aria-current="true" aria-label="Slide 45"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="45" aria-current="true" aria-label="Slide 46"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="46" aria-current="true" aria-label="Slide 47"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="47" aria-current="true" aria-label="Slide 48"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="48" aria-current="true" aria-label="Slide 49"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="49" aria-current="true" aria-label="Slide 50"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="50" aria-current="true" aria-label="Slide 51"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="51" aria-current="true" aria-label="Slide 52"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="52" aria-current="true" aria-label="Slide 53"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="53" aria-current="true" aria-label="Slide 54"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="54" aria-current="true" aria-label="Slide 55"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="55" aria-current="true" aria-label="Slide 56"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="56" aria-current="true" aria-label="Slide 57"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="57" aria-current="true" aria-label="Slide 58"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="58" aria-current="true" aria-label="Slide 59"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="59" aria-current="true" aria-label="Slide 60"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="60" aria-current="true" aria-label="Slide 61"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="61" aria-current="true" aria-label="Slide 62"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="62" aria-current="true" aria-label="Slide 63"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="63" aria-current="true" aria-label="Slide 64"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="64" aria-current="true" aria-label="Slide 65"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="65" aria-current="true" aria-label="Slide 66"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="66" aria-current="true" aria-label="Slide 67"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="67" aria-current="true" aria-label="Slide 68"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="68" aria-current="true" aria-label="Slide 69"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="69" aria-current="true" aria-label="Slide 70"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="70" aria-current="true" aria-label="Slide 71"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="71" aria-current="true" aria-label="Slide 72"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="72" aria-current="true" aria-label="Slide 73"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="73" aria-current="true" aria-label="Slide 74"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="74" aria-current="true" aria-label="Slide 75"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="75" aria-current="true" aria-label="Slide 76"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="76" aria-current="true" aria-label="Slide 77"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="77" aria-current="true" aria-label="Slide 78"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="78" aria-current="true" aria-label="Slide 79"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="79" aria-current="true" aria-label="Slide 80"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="80" aria-current="true" aria-label="Slide 81"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="81" aria-current="true" aria-label="Slide 82"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="82" aria-current="true" aria-label="Slide 83"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="83" aria-current="true" aria-label="Slide 84"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="84" aria-current="true" aria-label="Slide 85"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="85" aria-current="true" aria-label="Slide 86"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="86" aria-current="true" aria-label="Slide 87"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="87" aria-current="true" aria-label="Slide 88"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="88" aria-current="true" aria-label="Slide 89"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="89" aria-current="true" aria-label="Slide 90"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="90" aria-current="true" aria-label="Slide 91"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="91" aria-current="true" aria-label="Slide 92"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="92" aria-current="true" aria-label="Slide 93"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="93" aria-current="true" aria-label="Slide 94"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="94" aria-current="true" aria-label="Slide 95"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="95" aria-current="true" aria-label="Slide 96"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="96" aria-current="true" aria-label="Slide 97"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="97" aria-current="true" aria-label="Slide 98"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="98" aria-current="true" aria-label="Slide 99"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="99" aria-current="true" aria-label="Slide 100"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="100" aria-current="true" aria-label="Slide 101"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="101" aria-current="true" aria-label="Slide 102"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="102" aria-current="true" aria-label="Slide 103"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="103" aria-current="true" aria-label="Slide 104"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="104" aria-current="true" aria-label="Slide 105"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="105" aria-current="true" aria-label="Slide 106"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="106" aria-current="true" aria-label="Slide 107"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="107" aria-current="true" aria-label="Slide 108"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="108" aria-current="true" aria-label="Slide 109"></button>
+                <button type="button" data-bs-target="#carouselSpecial" data-bs-slide-to="109" aria-current="true" aria-label="Slide 110"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/01.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/02.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/03.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/04.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/05.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/06.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/07.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/08.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/09.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/10.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/100.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/101.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/102.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/103.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/104.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/105.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/106.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/107.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/108.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/109.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/11.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/110.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/12.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/13.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/14.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/15.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/16.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/17.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/18.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/19.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/20.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/21.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/22.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/23.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/24.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/25.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/26.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/27.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/28.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/29.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/30.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/31.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/32.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/33.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/34.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/35.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/36.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/37.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/38.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/39.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/40.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/41.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/42.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/43.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/44.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/45.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/46.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/47.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/48.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/49.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/50.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/51.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/52.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/53.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/54.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/55.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/56.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/57.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/58.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/59.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/60.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/61.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/62.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/63.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/64.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/65.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/66.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/67.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/68.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/69.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/70.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/71.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/72.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/73.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/74.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/75.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/76.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/77.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/78.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/79.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/80.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/81.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/82.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/83.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/84.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/85.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/86.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/87.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/88.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/89.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/90.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/91.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/92.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/93.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/94.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/95.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/96.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/97.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/98.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="aspect-ratio">
+                        <img src="assets/images/99.jpg" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSpecial" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSpecial" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="mt-4 text-center text-sm small">
+            <p>
+                To my one and only, <a href="message.html" style="color: red;"><strong>Happy 1st Monthsary!</strong></a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
